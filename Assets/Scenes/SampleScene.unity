@@ -305,8 +305,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806987448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.4932, y: 0, z: 0}
-  m_LocalScale: {x: 32.356853, y: 0.16043946, z: 12.681521}
+  m_LocalPosition: {x: 10.4356, y: 0, z: 0}
+  m_LocalScale: {x: 36.242912, y: 0.16043946, z: 12.681521}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -499,9 +499,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779170753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.62, y: 3.5162, z: 0}
-  m_LocalScale: {x: 1, y: 6.929258, z: 10.649}
-  m_Children: []
+  m_LocalPosition: {x: 24.7794, y: 3.5162, z: 0}
+  m_LocalScale: {x: 7.3188, y: 6.929258, z: 10.649}
+  m_Children:
+  - {fileID: 1834563646}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -592,11 +593,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834563644}
   m_LocalRotation: {x: 0.10259483, y: 0.30793306, z: 0.11457754, w: 0.9388949}
-  m_LocalPosition: {x: 14.14, y: 3.16, z: -2.26}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.4537082, y: -0.051405214, z: -0.2122265}
+  m_LocalScale: {x: 0.12028794, y: 0.13896672, z: 0.10652229}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1779170757}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 7.013, y: 37.321, z: 16.286}
 --- !u!1 &1848444655
 GameObject:
@@ -609,6 +610,7 @@ GameObject:
   - component: {fileID: 1848444657}
   - component: {fileID: 1848444656}
   - component: {fileID: 1848444658}
+  - component: {fileID: 1848444659}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -647,7 +649,7 @@ Transform:
   m_Children:
   - {fileID: 936470939}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1848444658
 MonoBehaviour:
@@ -661,8 +663,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c999a399d123047b238be70fdf7556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
   speed: 10
-  TurnSpeed: 5
+  TurnSpeed: -50
   Horizontal: 0
   Vertical: 0
+--- !u!65 &1848444659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848444655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.7, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
